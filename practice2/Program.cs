@@ -1,0 +1,31 @@
+﻿using System;
+using System.Linq;
+using practice2;
+
+QueryTasks qt = new QueryTasks();
+
+qt.select_objects_by_district_and_price(3000000, 4000000, "Строгино");
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_realtors_solded_objects_by_rooms(2);
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_total_price_of_quantity_appartments_by_district(2, "Строгино");
+Console.WriteLine("-------------------------------------------------------------------");
+qt.print_rieltor_by_min_and_max("Иван");
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_mark_by_rieltor_and_criteria(1, "Безопасность", "Иван" );
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_by_floor(8);
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_sold_quantity_by_type(1);
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_top_three();
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_lucky_years("Иван", "Иванович", "Иванов");
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_years_when_published(2020, 2024);
+Console.WriteLine("-------------------------------------------------------------------");
+qt.lower_then_20_price_difference();
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_realtors_with_no_deals(2022);
+Console.WriteLine("-------------------------------------------------------------------");
+qt.select_marks_stats("Пушкино д.9");
